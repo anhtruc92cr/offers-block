@@ -1,4 +1,5 @@
 === Offers Block ===
+
 Contributors:      Truc Nguyen
 Tags:              block, gutenberg block
 Tested up to:      6.1
@@ -11,12 +12,10 @@ This is for technical testing.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
 1. Upload the plugin files to the `/wp-content/plugins/offers-block` directory.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Enter API URL in to Settings on the right side.
-
+![API URL settings](https://github.com/anhtruc92cr/offers-block/blob/main/assets/offers-settings.png?raw=true)
 
 == Screenshots ==
 
