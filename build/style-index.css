@@ -1,0 +1,208 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.w-17 {
+  width: 17%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.offers-inner {
+  margin-bottom: 30px;
+}
+
+.offers-ribbon p {
+  display: inline;
+  padding: 5px 20px;
+  background: green;
+  color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 12px;
+}
+
+.offers-block {
+  gap: 20px;
+  position: relative;
+}
+
+.stars {
+  margin-bottom: 15px;
+}
+.stars .fa-star:not(.checked) {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFA502;
+  color: transparent;
+}
+.stars .fa {
+  color: #FFA502;
+}
+
+.offers-properties ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.offers-properties .fa-check {
+  color: #51B12F;
+  margin-right: 5px;
+}
+.offers-properties p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.offers-headlines .bonus-txt p {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 25px;
+  color: #51B12F;
+  margin-bottom: 5px;
+  word-break: break-all;
+}
+.offers-headlines .price p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0;
+}
+.offers-headlines .extra p {
+  font-size: 14px;
+  color: #A5A5A5;
+}
+
+.offers-rating {
+  width: 30%;
+}
+
+.offers-cta .play-btn a {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  display: block;
+  background: #51B12F;
+  color: #fff;
+}
+.offers-cta .others .cta {
+  font-size: 12px;
+  display: inline-block;
+  color: #000;
+}
+.offers-cta .others .cta:not(:last-child)::after {
+  border-right: 1px solid #000;
+  content: "";
+  height: 10px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.preview-img {
+  color: #FFA502;
+}
+.preview-img .preview-link {
+  background: #FFA502;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 7px;
+  font-size: 12px;
+}
+.preview-img .preview-link:hover {
+  cursor: pointer;
+}
+
+.offers-brand {
+  text-align: center;
+  font-size: 10px;
+  border-top: 1px solid #A5A5A5;
+  margin-top: 20px;
+}
+.offers-brand p span:not(:last-child)::after {
+  border-right: 1px solid #A5A5A5;
+  content: "";
+  height: 10px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-logos img {
+  max-width: 40px;
+  max-height: 40px;
+}
+.carousel-logos .swiper-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  min-height: 70px;
+}
+.carousel-logos .swiper-container .swiper-wrapper {
+  align-items: center;
+}
+.carousel-logos .swiper-pagination-bullet {
+  margin: 2px !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .offers-block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .offers-block .w-17, .offers-block .w-50 {
+    width: 100%;
+  }
+  .offers-block .offers-logo img {
+    max-width: 150px;
+    margin: 25px auto 0;
+  }
+  .offers-block .offers-properties .align-center {
+    justify-content: center;
+  }
+  .preview-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .preview-img .preview-link {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

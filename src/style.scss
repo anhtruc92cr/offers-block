@@ -1,0 +1,246 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+// Variables
+$yellow: #FFA502;
+$green: #51B12F;
+$gray: #A5A5A5;
+$black: #000;
+$white: #fff;
+
+//global
+.flex {
+	display: flex;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.w-17 {
+	width: 17%;
+}
+
+.w-30 {
+	width: 30%;
+}
+
+//specific
+.offers-inner {
+	margin-bottom: 30px;
+}
+.offers-ribbon {
+	p {		
+		display: inline;
+		padding: 5px 20px;
+		background: green;
+		color: white;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		font-size: 12px;
+	}
+}
+
+.offers-block {
+    gap: 20px;
+	position: relative;
+}
+.stars {
+	margin-bottom: 15px;
+	.fa-star {
+		&:not(.checked) {
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: $yellow;
+			color: transparent;
+		}
+	}
+	.fa {
+		color: $yellow;
+	}
+}
+
+.offers-properties {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		li {
+
+		}
+	}
+	.fa-check {
+		color: $green;
+		margin-right: 5px;
+	}
+	p {
+		margin: 0;
+		font-size: 14px;
+	}
+}
+
+.offers-headlines {
+	
+	.bonus-txt {
+		p {
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 25px;
+			color: $green;
+			margin-bottom: 5px;
+			word-break: break-all;
+		}
+	}
+	.price {
+		p {
+			font-size: 18px;
+    		font-weight: 700;
+			color: $black;
+			margin-bottom: 0;
+		}
+	}
+	.extra {
+		p {
+			font-size: 14px;
+			color: $gray;
+		}
+	}
+}
+
+.offers-rating {
+	width: 30%;
+}
+
+.offers-cta {
+	.play-btn {
+		a {
+			text-transform: uppercase;
+			font-size: 16px;
+			padding: 10px;
+			border-radius: 4px;
+			display: block;
+			background: $green;
+			color: $white;
+		}
+	}
+	.others {
+		.cta {
+			font-size: 12px;
+			display: inline-block;
+			color: $black; 
+
+			&:not(:last-child)::after {
+				border-right: 1px solid $black;
+				content: "";
+				height: 10px;
+				display: inline-block;
+				margin-left: 5px;
+			}
+		}
+	}
+}
+
+.preview-img {
+	color: $yellow;
+	
+	.preview-link {
+		background: $yellow;
+		color: $white;
+		border-radius: 5px;
+		border: none;
+		padding: 5px 7px;
+		font-size: 12px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.offers-brand {
+	text-align: center;
+    font-size: 10px;
+    border-top: 1px solid $gray;
+    margin-top: 20px;
+
+	p {
+		span:not(:last-child)::after {
+			border-right: 1px solid $gray;
+			content: "";
+			height: 10px;
+			display: inline-block;
+			margin: 0 5px;
+		}
+	}
+}
+.carousel-logos {
+	img {
+		max-width: 40px;
+		max-height: 40px;
+	}
+	.swiper-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		min-height: 70px;
+		.swiper-wrapper {
+			align-items: center; 
+		}
+	}
+	.swiper-pagination-bullet {
+		margin: 2px !important;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.offers-block {
+		flex-wrap: wrap;
+		justify-content: center;
+		
+		.w-17, .w-50 {
+			width: 100%;
+		}
+		.offers-logo {
+			img {
+				max-width: 150px;
+				margin: 25px auto 0;
+			}
+		}
+		.offers-properties {
+			.align-center {
+				justify-content: center;
+			}
+		}
+	}
+	.preview-img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		.preview-link {
+			border-top-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+}
